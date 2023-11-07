@@ -6,11 +6,15 @@
 
 ## Paso 2:
 - Para que funciona app-name , asegurese de que se use el puerto de la API
-  .\app-name\src\api\dataService.js
+- en este caso se uso el puerto 8080
+- Por lo que debemos revisar si el archivo "dataService.js" ubicado en:
+- .\app-name\src\api\dataService.js
+- cumple lo siguiente:
 ```
 const BASE_URL = 'http://localhost:8080';
 ```
 Para el Backend , postgres se usara el puerto 5432
+-nos dirigimos al archivo "application.properties" para verificar lo siguiente:
 - .\demo\src\main\resources\application.properties
 - revisar su usuario y contraseña
 ```
@@ -19,8 +23,8 @@ spring.datasource.url=jdbc:postgresql://localhost:5432/postgres
 spring.datasource.username=postgres
 spring.datasource.password=su-contraseña
 ```
-Para el Frontend , en este caso , el puerto 3000
-## Paso 3: Ejectuamos el DevExtreme!
+Para el Frontend , en este caso , el puerto 3000.
+## Paso 3: Ejecutamos el DevExtreme!
 
 1. Nos vamos al directorio padre de nuestro proyecto.
 ```
